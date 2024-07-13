@@ -5,12 +5,7 @@ using namespace std;
 int nth_fibo(int n,vector<int>&dp){
     if(n<=1)return n;
     if(dp[n]!=-1)return dp[n];
-    int first=nth_fibo(n-1,dp);
-    dp[n-1]=first;
-    int second=nth_fibo(n-2,dp);
-    dp[n-2]=second;
-
-    return first+second;
+    return dp[n]=nth_fibo(n-1,dp) + nth_fibo(n-2,dp); 
 }
 
 int fibonacci(int n){
