@@ -14,9 +14,10 @@ int fibonacci(int n){
 }
  
 int main(){
-    int n;
+    int n; 
     cout<<"Enter the position of the required Fibonacci number : ";
     cin>>n;
+    
 
     int ans=fibonacci(n);
 
