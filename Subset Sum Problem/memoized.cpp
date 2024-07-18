@@ -10,10 +10,7 @@ bool isPresent(vector<int>&arr,int target,int n){
     if(dp[n][target]!=-1)return dp[n][target];
 
     if(arr[n-1]<=target){
-        if(dp[n][target]=isPresent(arr,target-arr[n-1],n-1)==true){
-            return true;
-        }
-        if(dp[n][target]=isPresent(arr,target,n-1)==true){
+        if(dp[n][target]=isPresent(arr,target-arr[n-1],n-1)|| isPresent(arr,target,n-1)){
             return true;
         }
     }
