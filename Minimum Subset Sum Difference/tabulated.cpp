@@ -23,6 +23,7 @@ int min_subset_sum_diff(vector<int>&arr,int n,int range,int sum){
         }
     }
     return 0;
+    
 }
 
 int min_diff(vector<int>&arr,int n){
